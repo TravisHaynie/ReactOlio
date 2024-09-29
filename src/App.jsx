@@ -14,12 +14,15 @@ const App = () => {
       <Header />
       <Navigation />
       <main>
+      <div className="main-overlay"></div> {/* Translucent overlay */}
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />  {/* Home page */}
           <Route path="/about" element={<AboutMe />} />  {/* About Me page */}
           <Route path="/portfolio" element={<Projects />} />  {/* Projects/Portfolio page */}
           <Route path="/contact" element={<Contact />} />  {/* Contact page */}
         </Routes>
+        </div>
       </main>
       <Footer />
     </>

@@ -7,19 +7,19 @@ const Projects = () => {
       <h2>Work</h2>
       <div className="work-grid">
         <a className="git-hub" href="https://travishaynie.github.io/popcornpicks2/">
-          <img className="work-img" src="./assets/imgs/portfolio_project1.png" alt="Popcorn Picks Project" />
+          <img className="work-img" src="./src/assets/porfolio project.png" alt="Popcorn Picks Project" />
         </a>
 
         <a className="git-hub" href="https://art-attack-2.onrender.com">
-          <img className="work-img" src="./assets/imgs/project2.png" alt="Art Attack Project" />
+          <img className="work-img" src="./src/assets/Screenshot 2024-08-27 211242.png" alt="Art Attack Project" />
         </a>
 
         <a className="git-hub" href="https://travishaynie.github.io/ForcastToday-Api/">
-          <img className="work-img" src="./assets/imgs/project3.png" alt="Forecast Today API" />
+          <img className="work-img" src="./src/assets/Screenshot 2024-06-19 153116.png" alt="Forecast Today API" />
         </a>
 
         <a className="git-hub" href="https://travishaynie.github.io/Bloggers-API/">
-          <img className="work-img" src="./assets/imgs/project4.png" alt="Bloggers API" />
+          <img className="work-img" src="./src/assets/Screenshot 2024-06-09 163256.png" alt="Bloggers API" />
         </a>
       </div>
     </section>
