@@ -1,0 +1,139 @@
+/* Global Styles */
+:root {
+  font-family: 'Roboto', sans-serif;
+  --light: white;
+  --dark-maroon: rgb(73, 16, 16);
+  --translucent-white: rgba(255, 255, 255, 0.5);
+  --hover-subtle-red: rgba(150, 30, 30, 0.8);
+  --background-color: lightblue;
+}
+
+body {
+  font-size: 16px; /* Reset the global font size */
+  color: var(--light); 
+  background-color: var(--background-color); 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--dark-maroon);
+  border-bottom: 5px solid var(--light);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  border-radius: 50%;
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--dark-maroon);
+}
+
+.nav-link {
+  color: var(--light);
+  background-color: var(--translucent-white);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link.active {
+  background-color: var(--hover-subtle-red);
+  color: var(--light);
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--dark-maroon);
+  color: var(--light);
+  margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Main Section Styles */
+main {
+  padding: 2rem;
+  background: url('./src/assets/360_F_225084966_hhswkk9GgkAKcr2p1n69aaiI1jETbZO9.jpg') no-repeat center center fixed; /* Your image path */
+  background-size: cover;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  min-height: 80vh; /* Adjust height as needed */
+}
+
+
+.section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: var(--dark-maroon);  /* Solid maroon-red for sections */
+  color: var(--light);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);  /* Add shadow for better contrast */
+}
+
+h2 {
+  text-align: center;
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+ul {
+  text-align: center;
+  list-style: none;  /* Removes bullet points from contact section */
+  padding: 0;
+}
+
+ul li a {
+  color: var(--light); /* White links */
+  text-decoration: underline;
+}
+
+ul li a:hover {
+  color: var(--hover-subtle-red);  /* Subtle red hover for links */
+}
+
+/* Work Section */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Responsive grid layout */
+  gap: 1rem;
+}
+
+.work-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.work-img:hover {
+  box-shadow: 0 0 15px var(--light);
+}
