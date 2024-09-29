@@ -1,11 +1,16 @@
 
+import '../styles/App.css';
 
 const Resume = () => {
   return (
-    <div>
-      <h1>My Resume</h1>
-      <p>This is where the resume content will go.</p>
-      {/* You can add more details, like education, experience, skills, etc. */}
+    <div className="main-content resume-content">
+      <h2>Resume</h2>
+      <p>
+        You can view my full resume here: 
+        <a className="resume-link" href=" https://travishaynie.github.io/Resume/" target="_blank" rel="noopener noreferrer">
+          View My Resume
+        </a>
+      </p>
     </div>
   );
 };

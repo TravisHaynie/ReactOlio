@@ -8,10 +8,22 @@
   --background-color: lightblue;
 }
 
+a {
+  color: var(--light-blue); /* Light blue for clickable links */
+  text-decoration: none; /* Remove underline by default */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+a:hover {
+  color: var(--hover-subtle-red); /* Subtle red on hover for contrast */
+}
+
 body {
-  font-size: 16px; /* Reset the global font size */
-  color: var(--light); 
-  background-color: var(--background-color); 
+  font-size: 16px;
+  /* Reset the global font size */
+  color: var(--light);
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
   display: flex;
@@ -52,11 +64,13 @@ nav {
 }
 
 .nav-link {
+  margin: 0 10px;
   color: var(--light);
   background-color: var(--translucent-white);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -65,22 +79,30 @@ nav {
   color: var(--light);
 }
 
+.nav-link:hover {
+  background-color: var(--hover-subtle-red); /* Subtle red on hover */
+  color: var(--light); /* White text on hover */
+}
+
 /* Footer Styles */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--dark-maroon);
   color: var(--light);
-  margin-top: auto; /* Ensures footer stays at the bottom */
+  margin-top: auto;
+  /* Ensures footer stays at the bottom */
 }
 
 /* Main Section Styles */
 main {
-  position: relative;  /* Allows for positioning of the translucent overlay */
+  position: relative;
+  /* Allows for positioning of the translucent overlay */
   background: url('./src/assets/360_F_225084966_hhswkk9GgkAKcr2p1n69aaiI1jETbZO9.jpg') no-repeat center center fixed;
   background-size: cover;
   padding: 2rem;
-  min-height: calc(100vh - 160px); /* Adjusts based on header and footer height */
+  min-height: calc(100vh - 160px);
+  /* Adjusts based on header and footer height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,14 +114,18 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);  /* Translucent black overlay */
-  z-index: 1; /* Ensures it is above the background image */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Translucent black overlay */
+  z-index: 1;
+  /* Ensures it is above the background image */
 }
 
 .main-content {
   position: relative;
-  z-index: 2; /* Ensures content is above the overlay */
-  background-color: rgba(255, 255, 255, 0.7); /* Translucent white content box */
+  z-index: 2;
+  /* Ensures content is above the overlay */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Translucent white content box */
   padding: 2rem;
   border-radius: 10px;
   max-width: 1200px;
@@ -107,18 +133,101 @@ main {
   color: var(--dark-maroon);
 }
 
-h1, h2, p {
-  color: var(--dark-maroon); /* Ensure headings and paragraphs use the darker color */
+.home-content,
+.contact-content {
+  background-color: var(--dark-maroon);
+  /* Dark-maroon background */
+  color: var(--light);
+  /* White text to stand out on the dark background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* Shadow for better contrast */
+}
+
+.contact-link {
+  color: var(--background-color); /* White text color */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Bold text for emphasis */
+  padding: 0.2rem 0.5rem; /* Add padding around the link */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact-link:hover {
+  color: var(--hover-subtle-red); /* Change to subtle red on hover */
+}
+
+
+h1,
+h2,
+p {
+  color: var(--light);
+  /* Ensure headings and paragraphs use the darker color */
+}
+
+.resume-content {
+  background-color: var(--dark-maroon);
+  /* Same dark-maroon background */
+  color: var(--light);
+  /* White text */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* Add shadow for contrast */
+}
+
+.resume-link {
+  color: var(--background-color); /* White text color */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Bold text for emphasis */
+  padding: 0.2rem 0.5rem; /* Add a little padding around the link */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.resume-link:hover {
+  color: var(--hover-subtle-red); /* Change to a subtle red color on hover */
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  /* Center the links horizontally */
+  gap: 20px;
+  /* Add space between the links */
+  padding: 1rem;
+  background-color: var(--dark-maroon);
+  /* Dark-maroon background */
+  color: var(--background-color);
+  /* White text */
+}
+
+.footer a {
+  color: var(--background-color);
+  /* White text color for links */
+  text-decoration: none;
+  /* Remove underline from links */
+  font-weight: bold;
+  /* Make links bold */
+  transition: color 0.3s ease;
+  /* Smooth hover transition */
+}
+
+.footer a:hover {
+  color: var(--hover-subtle-red);
+  /* Subtle red color on hover */
 }
 
 
 .section {
   margin-bottom: 2rem;
   padding: 2rem;
-  background-color: var(--dark-maroon);  /* Solid maroon-red for sections */
+  background-color: var(--dark-maroon);
+  /* Solid maroon-red for sections */
   color: var(--light);
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);  /* Add shadow for better contrast */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* Add shadow for better contrast */
 }
 
 h2 {
@@ -134,23 +243,27 @@ p {
 
 ul {
   text-align: center;
-  list-style: none;  /* Removes bullet points from contact section */
+  list-style: none;
+  /* Removes bullet points from contact section */
   padding: 0;
 }
 
 ul li a {
-  color: var(--light); /* White links */
+  color: var(--light);
+  /* White links */
   text-decoration: underline;
 }
 
 ul li a:hover {
-  color: var(--hover-subtle-red);  /* Subtle red hover for links */
+  color: var(--hover-subtle-red);
+  /* Subtle red hover for links */
 }
 
 /* Work Section */
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Responsive grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Responsive grid layout */
   gap: 1rem;
 }
 
