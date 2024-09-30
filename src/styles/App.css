@@ -276,3 +276,18 @@ ul li a:hover {
 .work-img:hover {
   box-shadow: 0 0 15px var(--light);
 }
+
+/* Custom Modal Styling */
+/* Modal with White Border */
+.modal-content {
+  background-color: var(--dark-maroon); /* Dark background */
+  color: var(--light); /* White text */
+  border: 2px solid var(--light); /* White border for strong contrast */
+  border-radius: 10px; /* Optional: Add some rounding to the corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.modal-header, .modal-footer {
+  background-color: var(--dark-maroon);
+  border: none; /* Keep consistent with the modal content */
+}
