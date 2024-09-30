@@ -24,6 +24,7 @@ You can view the live version of my portfolio at:
 
 
 ## Screenshot
+![Screenshot 2024-09-30 143318](https://github.com/user-attachments/assets/32286cd5-e2bd-4288-b052-88b940c9c385)
 
 
 ## Projects Featured
