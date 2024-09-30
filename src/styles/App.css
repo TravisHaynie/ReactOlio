@@ -98,7 +98,7 @@ footer {
 main {
   position: relative;
   /* Allows for positioning of the translucent overlay */
-  background: url('./src/assets/360_F_225084966_hhswkk9GgkAKcr2p1n69aaiI1jETbZO9.jpg') no-repeat center center fixed;
+  background: url('../assets/background-img.jpg') no-repeat center center fixed;
   background-size: cover;
   padding: 2rem;
   min-height: calc(100vh - 160px);
