@@ -21,7 +21,7 @@ Welcome to my personal portfolio, where you can explore my featured projects, le
 
 ## Deployed URL
 You can view the live version of my portfolio at:
-
+https://shimmering-narwhal-fe808a.netlify.app
 
 ## Screenshot
 ![Screenshot 2024-09-30 143318](https://github.com/user-attachments/assets/32286cd5-e2bd-4288-b052-88b940c9c385)
