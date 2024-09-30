@@ -1,5 +1,5 @@
 import '../styles/App.css'; // Ensure the correct path to your CSS file
-import profileImage from '../assets/IMG_0904.JPG'; // Correct way to import the image
+import profileImage from '../assets/IMG_0904.jpg'; // Correct way to import the image
 
 const Header = () => {
   return (
