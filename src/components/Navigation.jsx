@@ -20,8 +20,7 @@ const Navigation = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink 
-                to="/" 
-                exact 
+                to="/"  
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
               >
                 Home
