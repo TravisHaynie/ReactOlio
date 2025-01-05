@@ -1,5 +1,5 @@
 import '../styles/App.css';
-import resumeFile from '../assets/resume.pdf'; // Import the resume
+import resumeFile from '../assets/Portfolio-resume.pdf'; // Import the resume
 
 const Resume = () => {
   return (
