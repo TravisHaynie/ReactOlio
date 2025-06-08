@@ -315,5 +315,5 @@ ul li a:hover {
 
 .modal-header, .modal-footer {
   background-color: var(--dark-maroon);
-  border: none; /* Keep consistent with the modal content */
+  border: none; 
 }

@@ -4,7 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 import '../styles/App.css';
 
 // Import the images correctly
-import ArtAttackImg from '../assets/Screenshot 2024-08-27 211242.png';
+import ArtAttackImg from '../assets/learningJournal.png';
 import PopcornPicksImg from '../assets/porfolio project.png';
 
 const ProjectModal = ({ title, description }) => {
@@ -59,15 +59,16 @@ const Home = () => {
             <div className="featured-projects">
                 <div className="project">
                     {/* Change "Project 1" to the actual project name */}
-                    <h2>Art Attack</h2>
+                    <h2>Learning Journal</h2>
 
-                    <a className="git-hub" href="https://art-attack-2.onrender.com" target="_blank" rel="noopener noreferrer">
+                    <a className="git-hub" href="https://astounding-kheer-ca9e98.netlify.app/" target="_blank" rel="noopener noreferrer">
                         <img className="work-img" src={ArtAttackImg} alt="Art Attack Project" />
                     </a>
 
                     <ProjectModal
-                        title="Art Attack"
-                        description="Art Attack is a competitive drawing game where users can challenge each other to draw based on a given subject. Once the drawings are complete, they can be saved and voted on by the participants."
+                        title="Learning Journal"
+                        description="Developed a Learning Journal web application using HTML5, CSS3 with a focus on responsive design, and JavaScript, 
+                        enabling users to reflect on and document their learning journey. "
                     />
                 </div>
 

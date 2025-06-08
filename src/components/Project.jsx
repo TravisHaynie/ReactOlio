@@ -2,7 +2,7 @@ import '../styles/App.css';
 
 // Import all images
 import popcornPicksImage from '../assets/porfolio project.png';
-import artAttackImage from '../assets/Screenshot 2024-08-27 211242.png';
+import learningJournal from '../assets/learningJournal.png';
 import forecastTodayImage from '../assets/Screenshot 2024-06-19 153116.png';
 import bloggersApiImage from '../assets/Screenshot 2024-06-09 163256.png';
 
@@ -15,8 +15,8 @@ const Projects = () => {
           <img className="work-img" src={popcornPicksImage} alt="Popcorn Picks Project" />
         </a>
 
-        <a className="git-hub" href="https://art-attack-2.onrender.com">
-          <img className="work-img" src={artAttackImage} alt="Art Attack Project" />
+        <a className="git-hub" href="https://astounding-kheer-ca9e98.netlify.app/">
+          <img className="work-img" src={learningJournal} alt="Learning Journal" />
         </a>
 
         <a className="git-hub" href="https://travishaynie.github.io/ForcastToday-Api/">
